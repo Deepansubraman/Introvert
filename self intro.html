@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Self-Introduction Generator</title>
+    <link rel="stylesheet" href="self intro.css">
+    <script src="self intro.js" defer></script>
+</head>
+<body>
+    <h2>Self-Introduction Generator</h2>
+
+    <form id="introForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Enter your name" required>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" placeholder="Enter your age" required>
+
+        <label for="profession">Profession:</label>
+        <input type="text" id="profession" placeholder="Your profession" required>
+
+        <label for="schooling">School/University:</label>
+        <input type="text" id="schooling" placeholder="Your school/university" required>
+
+        <label for="certifications">Certifications:</label>
+        <input type="text" id="certifications" placeholder="E.g., Python, Digital Marketing">
+
+        <label for="achievements">Achievements:</label>
+        <textarea id="achievements" placeholder="List your key achievements" rows="3"></textarea>
+
+        <label for="hobbies">Hobbies:</label>
+        <input type="text" id="hobbies" placeholder="E.g., reading, gaming" required>
+
+        <label for="introType">Select Introduction Type:</label>
+        <select id="introType">
+            <option value="casual">Casual</option>
+            <option value="professional">Professional</option>
+            <option value="academic">Academic</option>
+            <option value="social">Social</option>
+        </select>
+
+        <button type="button" id="generateBtn">Generate Intro</button>
+    </form>
+
+    <h3>Your Self-Introduction:</h3>
+    <p id="output"></p>
+</body>
+</html>

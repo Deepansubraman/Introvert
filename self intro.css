@@ -1,0 +1,88 @@
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 150vh;
+    margin: 0;
+    color: #fff;
+}
+
+h2 {
+    font-size: 26px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.4);
+}
+
+form {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 350px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+form:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 10px;
+    margin: 15px 0;
+    border: darkmagenta;
+    border-width: 1px;
+    border-radius: 8px;
+    font-size: 16px;
+    background: rgba(255, 255, 255, 0.3);
+    color: #000;
+}
+
+input:focus, textarea:focus, select:focus {
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+    transform: scale(1.05);
+}
+
+button {
+    background: #ff4081;
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    margin-top: 10px;
+    font-size: 18px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+button:hover {
+    background: #ff79a1;
+    transform: scale(1.1) translateY(-5px);
+    box-shadow: 0 10px 20px rgba(255, 64, 129, 0.4);
+}
+
+#output {
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 12px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+}
+
+#output:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
